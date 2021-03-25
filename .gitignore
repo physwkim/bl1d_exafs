@@ -1,0 +1,8 @@
+tags
+*.aux
+*.fls
+*.log
+*.pdf
+mongodb/
+*.pyc
+__pycache__/

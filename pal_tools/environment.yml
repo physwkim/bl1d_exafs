@@ -1,0 +1,42 @@
+# PAL Bluesky anaconda environment setting
+
+# usage: conda env create -f environment.yml
+# delete env : conda remove --name bluesky_202101 --all
+# Sang-Woo Kim, PAL
+
+name: bluesky_202101
+channels:
+- conda-forge
+- anaconda
+dependencies:
+  - python=3.8
+  - setuptools
+  - numcodecs
+  - pyepics=3.4.3
+  - pyqt=5.12.*
+  - pip
+  - pip:
+    - numpy==1.20.1
+    - scipy==1.5.2
+    - h5py==2.10
+    - pandas==1.1
+    - pyzmq==21.0.1
+    # - silx==0.14
+    - git+https://github.com/silx-kit/silx.git@498c5d82813a156361006535f35d7f113a01667a
+    - ipython==7.19
+    - jedi==0.17.2
+    - matplotlib==3.3.3
+    - pymongo==3.11
+    - databroker==1.0.6
+    - ophyd==1.5.3
+    - bluesky==1.6.6
+    - pydm==1.10
+    - intake==0.6.0
+    - scikit-image==0.17.2
+    - scikit-beam==0.0.23
+    - xraydb==4.4.4
+    - pylint
+    - psutil
+    - git+https://github.com/NSLS-II/mily.git@f736a1a0c631203ce15e3f9fc7791c12302860e4
+    - xlrd==1.2.0
+    - openpyxl
